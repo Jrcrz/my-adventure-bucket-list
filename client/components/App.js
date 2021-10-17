@@ -18,7 +18,7 @@ class App extends Component {
         description: "Berlin, Germany",
         imageLink: "https://i.natgeofe.com/n/9e138c12-712d-41d4-9be9-5822a3251b5a/brandenburggate-berlin-germany.jpg"
       }, {
-        id: '2',
+        id: '3',
         description: "Los Angeles, California",
         imageLink: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/1d/b8.jpg"
       }]
@@ -35,7 +35,7 @@ class App extends Component {
     }))
   }
 
-  addPhoto(postSubmitted){
+  addPhoto(postSubmitted) {
     console.log('this adventure was added:', postSubmitted.description)
     this.setState((state) => ({
       posts: state.posts.concat([postSubmitted])
@@ -64,12 +64,12 @@ class App extends Component {
           </div>
         )} />,
 
-        < Route exact path="/AddAdventure" render={({history}) => (
+        < Route exact path="/AddAdventure" render={({ history }) => (
           <div>
             <AddAdventure addPhoto={(addedPost) => {
-              this.addPhoto(addedPost) 
+              this.addPhoto(addedPost)
               history.push('/')
-              }}/>
+            }} />
           </div>
         )} />
       </div>
