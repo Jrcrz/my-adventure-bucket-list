@@ -19,7 +19,7 @@ class App extends Component {
         imageLink: "https://i.natgeofe.com/n/9e138c12-712d-41d4-9be9-5822a3251b5a/brandenburggate-berlin-germany.jpg"
       }, {
         id: '3',
-        description: "Los Angeles, California",
+        description: "Santa Monica, California",
         imageLink: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/1d/b8.jpg"
       }]
     }
